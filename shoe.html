@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+     
+<body>
+    <div class="product">
+        <h2>Nike Air Max</h2>
+        <img src="shoe.jpg" alt="Nike Air Max">
+        
+        <form action="add_to_cart.php" method="POST">
+            <label for="size">Select Size:</label>
+            <select name="size" id="size">
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+
+            <input type="hidden" name="product_id" value="1">
+            <button type="submit">Add to Cart</button>
+        </form>
+    </div>
+</body>
+</html>
